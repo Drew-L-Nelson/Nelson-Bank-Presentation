@@ -88,7 +88,7 @@
 
             System.Console.Write("Enter Choice:");
             customersMenuChoice = System.Convert.ToInt32(System.Console.ReadLine()); // ToIne32() is another way to convert strings into numerical types
-        } while (customersMenuChoice != 0); 
+        } while (customersMenuChoice != 0); // *** IMPORTANT *** while the 0 button is not being hit, this do-while loop will run. As soon as you hit 0, the loop stops and you default back to the main menu
     }
 
 
@@ -109,6 +109,6 @@
 
             System.Console.Write("Enter Choice:");
             accountsMenuChoice = System.Convert.ToInt32(System.Console.ReadLine()); // ToIne32() is another way to convert strings into numerical types
-        } while (accountsMenuChoice != 0);
+        } while (accountsMenuChoice != 0); // *** IMPORTANT *** while the 0 button is not being hit, this do-while loop will run. As soon as you hit 0, the loop stops and you default back to the main menu
     }
 }
