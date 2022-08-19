@@ -1,15 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
+﻿class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+        // display title
+        System.Console.WriteLine("*************** Nelson Bank ***************");
+        System.Console.WriteLine("::Login Page"::);
+
+        // declare variables to store username and password
+        string userName = null, password = null;
+
+        // read userName from keyboard
+        System.Console.Write("Username:");
+        userName = System.Console.ReadLine(); // ReadLine will read the value from the keyboard and assign it to the userName variable
+
+        // read password from keyboard
+        System.Console.Write("Password:");
+        password = System.Console.ReadLine();
+
+
     }
 }
