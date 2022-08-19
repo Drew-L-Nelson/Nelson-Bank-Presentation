@@ -23,7 +23,46 @@
         // check username and passwork
         if (userName == "system" && password == "manager")
         {
-            System.Console.WriteLine("TO DO: Main menu here");
+            // declare variable to store menu choice
+            int mainMenuChoice = -1;
+            do
+            {
+                //show main menu
+                System.Console.WriteLine("\n:::Main Menu:::");
+                System.Console.WriteLine("1. Customers");
+                System.Console.WriteLine("2. Accounts");
+                System.Console.WriteLine("3. Funds Transfer");
+                System.Console.WriteLine("4. Funds Transfer Statement");
+                System.Console.WriteLine("5. Account Statement");
+                System.Console.WriteLine("0. Exit");
+
+                //accept menu choice from keyboard
+                System.Console.Write("Enter Choice:");
+                mainMenuChoice = int.Parse(System.Console.ReadLine());
+
+                //switch-case to check menu choice
+                switch (mainMenuChoice)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 0:
+                        break;
+                    default:
+                        break;
+                }
+            } while (mainMenuChoice != 0);
+        }
+        else
+        {
+            System.Console.WriteLine("Invalid username or password");
         }
 
         //about to exit
