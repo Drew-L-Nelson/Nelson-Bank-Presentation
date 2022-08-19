@@ -38,14 +38,14 @@
 
                 //accept menu choice from keyboard
                 System.Console.Write("Enter Choice:");
-                mainMenuChoice = int.Parse(System.Console.ReadLine());
+                mainMenuChoice = int.Parse(System.Console.ReadLine()); // int.Parse() is one way to convert strings into numerical type
 
                 //switch-case to check menu choice
                 switch (mainMenuChoice)
                 {
                     case 1: CustomersMenu();
                         break;
-                    case 2:
+                    case 2: AccountsMenu();
                         break;
                     case 3:
                         break;
@@ -87,7 +87,28 @@
             System.Console.WriteLine("0. Back to Main Menu");
 
             System.Console.Write("Enter Choice:");
-            customersMenuChoice = System.Convert.ToInt32(System.Console.ReadLine());
+            customersMenuChoice = System.Convert.ToInt32(System.Console.ReadLine()); // ToIne32() is another way to convert strings into numerical types
         } while (customersMenuChoice != 0); 
+    }
+
+
+    static void AccountsMenu()
+    {
+        // variable to store accounts menu choice
+        int accountsMenuChoice = -1;
+
+        do
+        {
+            // print accounts menu
+            System.Console.WriteLine("\n:::Accounts Menu:::");
+            System.Console.WriteLine("1. Add Account");
+            System.Console.WriteLine("2. Delete Account");
+            System.Console.WriteLine("3. Update Account");
+            System.Console.WriteLine("4. View Account");
+            System.Console.WriteLine("0. Back to Main Menu");
+
+            System.Console.Write("Enter Choice:");
+            accountsMenuChoice = System.Convert.ToInt32(System.Console.ReadLine()); // ToIne32() is another way to convert strings into numerical types
+        } while (accountsMenuChoice != 0);
     }
 }
